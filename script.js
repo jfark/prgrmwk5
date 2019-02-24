@@ -60,6 +60,6 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-	console.log ("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year + ".");
+	console.log ("This speech was written by " + demosthenesSpeech.author + " in " + demosthenesSpeech.year + ".");
   //Code in here executes when the user clicks the "Demosthenes" button.
 });
