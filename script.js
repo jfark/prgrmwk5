@@ -21,14 +21,12 @@ var churchillSpeech = {
 
 	window.onload = function() {
 		var userName = prompt("Hello! Please enter your name.", "Barney");
-	if (userName !== "" || userName !== false) {
+	if (userName !== "" && typeof userName === "string") {
 		console.log ("Hi " + userName + "!");
 	} else {
-		if (userName === "" || userName === false) {
 			console.log ("Ok, I’ll just call you User.");
 		}
 	}
-}
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
 	var favoriteAuthor = prompt("Which author is your favorite? Churchill, Ghandi, or Demosthenes?");
