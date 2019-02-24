@@ -24,13 +24,20 @@ var churchillSpeech = {
 	if (userName !== "" || userName !== false) {
 		console.log ("Hi " + userName + "!");
 	} else {
-		if (userName === "" || userName === 0) {
+		if (userName === "" || userName === false) {
 			console.log ("Ok, I’ll just call you User.");
 		}
 	}
 }
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
+	var favoriteAuthor = prompt("Which author is your favorite? Churchill, Ghandi, or Demosthenes?");
+	switch(favoriteAuthor) {
+	case "Churchill" : 
+		console.log (churchillSpeech.author + " was " + churchillSpeech.authorAge + " during this speech.");
+		break;
+	}
+  
   //Code in here executes when the user clicks the "Donate" button.
 });
 
