@@ -36,6 +36,15 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 	case "Churchill" : 
 		console.log (churchillSpeech.author + " was " + churchillSpeech.authorAge + " during this speech.");
 		break;
+	case "Ghandi" :
+		console.log (ghandiSpeech.author + " was " + ghandiSpeech.authorAge + " during this speech.");
+		break;
+	case "Demosthenes" :
+		console.log (demosthenesSpeech.author + " was " + demosthenesSpeech.authorAge + " during this speech.");
+		break;
+	default :
+		console.log ("It's OK to not have a favorite.");
+		break;
 	}
   
   //Code in here executes when the user clicks the "Donate" button.
