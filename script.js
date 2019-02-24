@@ -22,6 +22,11 @@ var churchillSpeech = {
 	window.onload = function() {
 		var userName = prompt("Hello! Please enter your name.", "Barney");
 	};
+	if (userName !== "") {
+		console.log ("Hi " + userName + "!")
+	} else {
+		console.log ("Ok, I’ll just call you User.")
+	};
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
