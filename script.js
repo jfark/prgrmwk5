@@ -55,7 +55,16 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 		console.log ("This speech took place during the common era.");
 	} else {
 		console.log ("This speech took place before the common era.");
-	}	
+	}
+	if (churchillSpeech.year > ghandiSpeech.year && churchillSpeech.year > demosthenesSpeech.year) {
+		console.log ("This is the most recent speech on the page.")
+	} else {
+	if (churchill.Speech.year < ghandiSpeech.year && churchillSpeech.year < demosthenesSpeech.year) {
+		console.log ("This is the oldest speech on the page.")
+	} else {
+		console.log ("This is neither the oldest nor most recent speech on the page.")
+	}
+}
   //Code in here executes when the user clicks the "Churchill" button.
 });
 
@@ -66,6 +75,15 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
 	} else {
 		console.log ("This speech took place before the common era.");
 	}
+	if (ghandiSpeech.year > churchillSpeech.year && ghandiSpeech.year > demosthenesSpeech.year) {
+		console.log ("This is the most recent speech on the page.")
+	} else {
+	if (ghandiSpeech.year < churchillSpeech.year && ghandiSpeech.year < demosthenesSpeech.year) {
+		console.log ("This is the oldest speech on the page.")
+	} else {
+		console.log ("This is neither the oldest nor most recent speech on the page.")
+	}
+}
   //Code in here executes when the user clicks the "Ghandi" button.
 });
 
@@ -76,5 +94,14 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
 	} else {
 		console.log ("This speech took place before the common era.");
 	}
+	if (demosthenesSpeech.year > churchillSpeech.year && demosthenesSpeech.year > ghandiSpeech.year) {
+		console.log ("This is the most recent speech on the page.")
+	} else {
+	if (demosthenesSpeech.year < churchillSpeech.year && demosthenesSpeech.year < ghandiSpeech.year) {
+		console.log ("This is the oldest speech on the page.")
+	} else {
+		console.log ("This is neither the oldest nor most recent speech on the page.")
+	}
+}
   //Code in here executes when the user clicks the "Demosthenes" button.
 });
