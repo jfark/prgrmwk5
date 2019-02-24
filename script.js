@@ -21,10 +21,12 @@ var churchillSpeech = {
 
 	window.onload = function() {
 		var userName = prompt("Hello! Please enter your name.", "Barney");
-	if (userName !== "") {
+	if (userName !== "" || userName !== false) {
 		console.log ("Hi " + userName + "!");
 	} else {
-		console.log ("Ok, I’ll just call you User.");
+		if (userName === "" || userName === 0) {
+			console.log ("Ok, I’ll just call you User.");
+		}
 	}
 }
 
