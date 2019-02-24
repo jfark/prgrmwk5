@@ -59,7 +59,7 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 	if (churchillSpeech.year > ghandiSpeech.year && churchillSpeech.year > demosthenesSpeech.year) {
 		console.log ("This is the most recent speech on the page.")
 	} else {
-	if (churchill.Speech.year < ghandiSpeech.year && churchillSpeech.year < demosthenesSpeech.year) {
+	if (churchillSpeech.year < ghandiSpeech.year && churchillSpeech.year < demosthenesSpeech.year) {
 		console.log ("This is the oldest speech on the page.")
 	} else {
 		console.log ("This is neither the oldest nor most recent speech on the page.")
