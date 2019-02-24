@@ -51,15 +51,30 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
 	console.log ("This speech was written by " + churchillSpeech.author + " in " + churchillSpeech.year + ".");
+	if (churchillSpeech.year >= 1600) {
+		console.log ("This speech took place during the common era.");
+	} else {
+		console.log ("This speech took place before the common era.");
+	}	
   //Code in here executes when the user clicks the "Churchill" button.
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
 	console.log ("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year + ".");
+	if (ghandiSpeech.year >= 1600) {
+		console.log ("This speech took place during the common era.");
+	} else {
+		console.log ("This speech took place before the common era.");
+	}
   //Code in here executes when the user clicks the "Ghandi" button.
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
 	console.log ("This speech was written by " + demosthenesSpeech.author + " in " + demosthenesSpeech.year + ".");
+	if (demosthenesSpeech.year >= 1600) {
+		console.log ("This speech took place during the common era.");
+	} else {
+		console.log ("This speech took place before the common era.");
+	}
   //Code in here executes when the user clicks the "Demosthenes" button.
 });
