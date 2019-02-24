@@ -46,18 +46,20 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 		console.log ("It's OK to not have a favorite.");
 		break;
 	}
-  
   //Code in here executes when the user clicks the "Donate" button.
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
+	console.log ("This speech was written by " + churchillSpeech.author + " in " + churchillSpeech.year + ".");
   //Code in here executes when the user clicks the "Churchill" button.
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
+	console.log ("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year + ".");
   //Code in here executes when the user clicks the "Ghandi" button.
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
+	console.log ("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year + ".");
   //Code in here executes when the user clicks the "Demosthenes" button.
 });
